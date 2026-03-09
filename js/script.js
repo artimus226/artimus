@@ -5,7 +5,7 @@ const eventData = {
     'think-tank': {
         title: 'Prompt Arena (Ask GPT)',
         host: 'Heimerdinger',
-        image: 'images/Heimerdinger.jpg',
+        image: 'images/event_Heimerdinger.jpg',
         rules: [
             'Team size: 2–3 members.',
             'Participants receive tasks like tech trivia, logic problems, or creative prompt challenges.',
@@ -17,7 +17,7 @@ const eventData = {
     'cipher-hunt': {
         title: 'Cipher Run (Treasure hunt)',
         host: 'Jayce',
-        image: 'images/Jayce.jpg',
+        image: 'images/event_Jayce.jpg',
         rules: [
             'Team size: up to 3 members.',
             'First clue is provided at the starting point. Each clue contains a riddle, cipher, hidden code, or puzzle.',
@@ -29,7 +29,7 @@ const eventData = {
     'code-breakers': {
         title: 'Glitch hunt (Bug Bounty)',
         host: 'Jinx',
-        image: 'images/Jinx.jpg',
+        image: 'images/event_Ekko.jpg',
         rules: [
             'Team size: 1–2 members.',
             'Participants receive a demo website/app with intentional bugs.',
@@ -41,7 +41,7 @@ const eventData = {
     'innovation-forge': {
         title: 'Code Forge (Mini hackathon)',
         host: 'Viktor',
-        image: 'images/Viktor.jpg',
+        image: 'images/event_Viktor.jpg',
         rules: [
             'Team size: 2–4 members. Time duration: 3–4 hours.',
             'Theme/problem statement announced at the start. Build Web apps, AI tools, Automation tools, or Utilities.',
@@ -53,7 +53,7 @@ const eventData = {
     'power-auction': {
         title: 'PowerPlay Draft (IPL Auction)',
         host: 'Silco',
-        image: 'images/Renata.jpg',
+        image: 'images/event_Silco.jpg',
         rules: [
             'Power comes to those who will do anything to achieve it.',
             'Manage your virtual budget and bid on players to build the ultimate team.',
@@ -65,7 +65,7 @@ const eventData = {
     'zaun-carnival': {
         title: 'Chaos Carnival (Fun Fiesta)',
         host: 'Ekko',
-        image: 'images/Ekko.jpg',
+        image: 'images/event_Jinx.jpg',
         rules: [
             'Welcome to the Fun Fiesta!',
             'Participate in various mini-games and carnival activities.',
@@ -76,7 +76,7 @@ const eventData = {
     'battle-nexus': {
         title: 'Jinx Playground (E-Sports)',
         host: 'Vi',
-        image: 'images/Vi.jpg',
+        image: 'images/event_Vi.jpg',
         rules: [
             'Step into the ring. Standard Esports tournament brackets.',
             'Titles include Valorant and BGMI.',
@@ -87,7 +87,7 @@ const eventData = {
     'piltover-gala': {
         title: 'SoundStorm (Sound Party)',
         host: 'Caitlyn',
-        image: 'images/Caitlyn.jpg',
+        image: 'images/event_Mel.jpg',
         rules: [
             'A classy Gowned Party event.',
             'Dress code is strictly formal / gala attire.',
