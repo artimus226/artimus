@@ -9,15 +9,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Welcome Loader -->
     <div id="welcome-loader" class="welcome-loader">
         <div class="loader-content" style="text-align: center;">
-            <img src="logo.png" alt="Artimus 2K26 Logo" class="loader-logo">
+            <img src="images/logo.png" alt="Artimus 2K26 Logo" class="loader-logo">
         </div>
+    </div>
+
+    <!-- Dynamic Aesthetic Arcane Background -->
+    <div id="bg-slider" class="bg-slider">
+        <div class="bg-overlay"></div>
     </div>
 
     <!-- Interactive Spider Web Background -->
@@ -27,7 +32,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo-container">
-                <img src="logo.png" alt="Artimus 2K26" class="site-logo">
+                <img src="images/logo.png" alt="Artimus 2K26" class="site-logo">
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -47,7 +52,7 @@
 
         <div class="hero-content reveal">
             <div class="hero-badge">THE CHAMPIONSHIP OF THE UNDERCITY</div>
-            <img src="logo.png" alt="Artimus 2K26" class="hero-main-logo">
+            <img src="images/logo.png" alt="Artimus 2K26" class="hero-main-logo">
             <h1 class="hero-title glitch" data-text="ARTIMUS 2K26">ARTIMUS 2K26</h1>
             <p class="hero-subtitle">Experience the Hextech Revolution. Battle for dominance in Zaun.</p>
 
@@ -95,11 +100,11 @@
                 <!-- Heimerdinger's Think Tank -->
                 <div class="neura-card reveal tech-event" data-category="tech" onclick="openModal('think-tank')">
                     <div class="card-img-container">
-                        <img src="Heimerdinger.jpg" alt="Heimerdinger">
+                        <img src="images/Heimerdinger.jpg" alt="Heimerdinger">
                         <div class="card-badge tech-badge">Hextech</div>
                     </div>
                     <div class="card-body">
-                        <h3 class="card-title">The Academy Trials</h3>
+                        <h3 class="card-title">Prompt Arena (Ask GPT)</h3>
                         <p class="card-host">Host: Heimerdinger</p>
                         <p class="card-desc">Solve problems using AI tools and clever prompts. Creativity determines
                             points.</p>
@@ -113,11 +118,11 @@
                 <div class="neura-card reveal tech-event" data-category="tech" onclick="openModal('cipher-hunt')"
                     style="transition-delay: 100ms;">
                     <div class="card-img-container">
-                        <img src="Jayce.jpg" alt="Jayce">
+                        <img src="images/Jayce.jpg" alt="Jayce">
                         <div class="card-badge tech-badge">Hextech</div>
                     </div>
                     <div class="card-body">
-                        <h3 class="card-title">The Hexgate Decryption</h3>
+                        <h3 class="card-title">Cipher Run (Treasure hunt)</h3>
                         <p class="card-host">Host: Jayce</p>
                         <p class="card-desc">Decode clues, riddles, and ciphers to reveal hidden meanings across the
                             campus.</p>
@@ -131,11 +136,11 @@
                 <div class="neura-card reveal tech-event" data-category="tech" onclick="openModal('code-breakers')"
                     style="transition-delay: 200ms;">
                     <div class="card-img-container">
-                        <img src="Jinx.jpg" alt="Jinx">
+                        <img src="images/Jinx.jpg" alt="Jinx">
                         <div class="card-badge tech-badge">Hextech</div>
                     </div>
                     <div class="card-body">
-                        <h3 class="card-title">The Firelight Protocol</h3>
+                        <h3 class="card-title">Glitch hunt (Bug Bounty)</h3>
                         <p class="card-host">Host: Jinx</p>
                         <p class="card-desc">Find vulnerabilities and bugs in provided applications. Highest chaotic
                             score wins.</p>
@@ -149,11 +154,11 @@
                 <div class="neura-card reveal tech-event" data-category="tech" onclick="openModal('innovation-forge')"
                     style="transition-delay: 300ms;">
                     <div class="card-img-container">
-                        <img src="Viktor.jpg" alt="Viktor">
+                        <img src="images/Viktor.jpg" alt="Viktor">
                         <div class="card-badge tech-badge">Hextech</div>
                     </div>
                     <div class="card-body">
-                        <h3 class="card-title">The Atlas Gauntlet Forge</h3>
+                        <h3 class="card-title">Code Forge (Mini hackathon)</h3>
                         <p class="card-host">Host: Viktor</p>
                         <p class="card-desc">Build a small tech solution within a short time.</p>
                         <div class="card-footer">
@@ -166,11 +171,11 @@
                 <div class="neura-card reveal non-tech-event" data-category="non-tech"
                     onclick="openModal('power-auction')">
                     <div class="card-img-container">
-                        <img src="Renata.jpg" alt="Silco" style="object-position: top; transform: scale(1.5);">
+                        <img src="images/Renata.jpg" alt="Silco" style="object-position: top; transform: scale(1.5);">
                         <div class="card-badge non-tech-badge">Undercity</div>
                     </div>
                     <div class="card-body">
-                        <h3 class="card-title">The Council's Bidding</h3>
+                        <h3 class="card-title">PowerPlay Draft (IPL Auction)</h3>
                         <p class="card-host">Host: Silco</p>
                         <p class="card-desc">Manage your virtual budget and bid on players to build the ultimate team.
                         </p>
@@ -184,11 +189,11 @@
                 <div class="neura-card reveal non-tech-event" data-category="non-tech"
                     onclick="openModal('zaun-carnival')" style="transition-delay: 100ms;">
                     <div class="card-img-container">
-                        <img src="Ekko.jpg" alt="Ekko">
+                        <img src="images/Ekko.jpg" alt="Ekko">
                         <div class="card-badge non-tech-badge">Undercity</div>
                     </div>
                     <div class="card-body">
-                        <h3 class="card-title">The Drop's Underground Gala</h3>
+                        <h3 class="card-title">Chaos Carnival (Fun Fiesta)</h3>
                         <p class="card-host">Host: Ekko</p>
                         <p class="card-desc">Welcome to the Fun Fiesta! Mini-games and activities straight out of the
                             Firelights' hideout.</p>
@@ -202,11 +207,11 @@
                 <div class="neura-card reveal non-tech-event" data-category="non-tech"
                     onclick="openModal('battle-nexus')" style="transition-delay: 200ms;">
                     <div class="card-img-container">
-                        <img src="Vi.jpg" alt="Vi">
+                        <img src="images/Vi.jpg" alt="Vi">
                         <div class="card-badge non-tech-badge">Undercity</div>
                     </div>
                     <div class="card-body">
-                        <h3 class="card-title">The Last Drop Brawl</h3>
+                        <h3 class="card-title">Jinx Playground (E-Sports)</h3>
                         <p class="card-host">Host: Vi</p>
                         <p class="card-desc">Step into the ring. Prove your mechanical prowess in standard Esports
                             tournament brackets.</p>
@@ -220,11 +225,11 @@
                 <div class="neura-card reveal non-tech-event" data-category="non-tech"
                     onclick="openModal('piltover-gala')" style="transition-delay: 300ms;">
                     <div class="card-img-container">
-                        <img src="Caitlyn.jpg" alt="Caitlyn">
+                        <img src="images/Caitlyn.jpg" alt="Caitlyn">
                         <div class="card-badge non-tech-badge">Piltover</div>
                     </div>
                     <div class="card-body">
-                        <h3 class="card-title">The Progress Day Summit</h3>
+                        <h3 class="card-title">SoundStorm (Sound Party)</h3>
                         <p class="card-host">Host: Caitlyn</p>
                         <p class="card-desc">A formal Gowned Party where the elite of topside gather. Dress to impress.
                         </p>
@@ -304,7 +309,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
