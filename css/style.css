@@ -1036,6 +1036,15 @@ body {
         padding-top: 100px;
     }
 
+    .events-section {
+        padding-top: 120px; /* Force clearance for sticky mobile navbar */
+    }
+
+    .filter-container {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+
     .hero-title {
         font-size: 3.5rem;
     }
