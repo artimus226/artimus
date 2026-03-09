@@ -160,7 +160,6 @@ filterBtns.forEach(btn => {
 // --- MODAL LOGIC ---
 const modalContainer = document.getElementById('modal-container');
 const modalTitle = document.getElementById('modal-title');
-const modalHost = document.getElementById('modal-host');
 const modalImage = document.getElementById('modal-char-img');
 const modalRules = document.getElementById('modal-rules');
 
@@ -170,7 +169,6 @@ function openModal(eventId) {
 
     // Populate data
     modalTitle.textContent = data.title;
-    modalHost.textContent = `Host: ${data.host}`;
     modalImage.src = data.image;
 
     // Populate Rules
